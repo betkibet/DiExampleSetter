@@ -3,10 +3,12 @@ package com.clc;
 public class Farmer {
 	private String fName;
 	private String aAge;
-	private String aType;
+//	private String aType;
+	//Get Animal name from Class Animal
+	private Animal animal;
 	
 	public void printAnimal() {
-		System.out.println("Hi " + fName + " your " + aType + " is " + aAge + " years." );
+		System.out.println("Hi " + fName + " your " + animal.getaName() + " is " + aAge + " years." );
 	}
 
 	public String getfName() {
@@ -25,13 +27,19 @@ public class Farmer {
 		this.aAge = aAge;
 	}
 
-	public String getaType() {
-		return aType;
+	public Animal getAnimal() {
+		return animal;
 	}
 
-	public void setaType(String aType) {
-		this.aType = aType;
+	public void setAnimal(Animal animal) {
+		this.animal = animal;
 	}
+
+	/*
+	 * public String getaType() { return aType; }
+	 * 
+	 * public void setaType(String aType) { this.aType = aType; }
+	 */
 	
 
 }

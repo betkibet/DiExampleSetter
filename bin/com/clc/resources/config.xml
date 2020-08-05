@@ -4,6 +4,10 @@
 	<bean class="com.clc.Farmer" id="farmer" scope="singleton">
 		<property name="fName" value="Namanga"></property>
 		<property name="aAge" value="21"></property>
-		<property name="aType" value="Cow"></property>
+		<property name="animal" ref="anim"></property>
+		
+	</bean>
+	<bean class="com.clc.Animal" id="anim">
+		<property name="aName" value="Cow"></property>
 	</bean>
 </beans>
