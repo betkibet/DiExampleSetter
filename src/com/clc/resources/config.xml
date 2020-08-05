@@ -5,9 +5,14 @@
 		<property name="fName" value="Namanga"></property>
 		<property name="aAge" value="21"></property>
 		<property name="animal" ref="anim"></property>
+		<property name="farmTools" ref="tools"></property>
 		
 	</bean>
 	<bean class="com.clc.Animal" id="anim">
 		<property name="aName" value="Cow"></property>
+	</bean>
+	<bean class="com.clc.FarmTools" id="tools">
+		<property name="fTool" value="Jembe"></property>
+		<property name="uTool" value="Digging Narrow alleys"></property>
 	</bean>
 </beans>

@@ -3,12 +3,12 @@ package com.clc;
 public class Farmer {
 	private String fName;
 	private String aAge;
-//	private String aType;
 	//Get Animal name from Class Animal
 	private Animal animal;
+	private FarmTools farmTools;
 	
 	public void printAnimal() {
-		System.out.println("Hi " + fName + " your " + animal.getaName() + " is " + aAge + " years." );
+		System.out.println("Hi " + fName + " your " + animal.getaName() + " is " + aAge + " years. You use " + farmTools.getfTool() + " for " + farmTools.getuTool() );
 	}
 
 	public String getfName() {
@@ -33,6 +33,14 @@ public class Farmer {
 
 	public void setAnimal(Animal animal) {
 		this.animal = animal;
+	}
+
+	public FarmTools getFarmTools() {
+		return farmTools;
+	}
+
+	public void setFarmTools(FarmTools farmTools) {
+		this.farmTools = farmTools;
 	}
 
 	/*
