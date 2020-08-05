@@ -4,11 +4,15 @@ public class Farmer {
 	private String fName;
 	private String aAge;
 	//Get Animal name from Class Animal
-	private Animal animal;
+//	private Animal animal;
+	private Animal[] animal;
 	private FarmTools farmTools;
 	
 	public void printAnimal() {
-		System.out.println("Hi " + fName + " your " + animal.getaName() + " is " + aAge + " years. You use " + farmTools.getfTool() + " for " + farmTools.getuTool() );
+//		System.out.println("Hi " + fName + " your " + animal.getaName() + " is " + aAge + " years. You use " + farmTools.getfTool() + " for " + farmTools.getuTool() );
+		for (Animal animal2 : animal) {
+			System.out.println(animal2.getaName());
+		}
 	}
 
 	public String getfName() {
@@ -27,11 +31,13 @@ public class Farmer {
 		this.aAge = aAge;
 	}
 
-	public Animal getAnimal() {
+	
+
+	public Animal[] getAnimal() {
 		return animal;
 	}
 
-	public void setAnimal(Animal animal) {
+	public void setAnimal(Animal[] animal) {
 		this.animal = animal;
 	}
 

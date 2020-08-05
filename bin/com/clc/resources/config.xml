@@ -9,7 +9,14 @@
 		
 	</bean>
 	<bean class="com.clc.Animal" id="anim">
-		<property name="aName" value="Cow"></property>
+		<!-- <property name="aName" value="Cow"></property> -->
+		<property name="aName">
+			<list>
+				<value>Cow</value>
+				<value>Horse</value>
+				<value>Kuku</value>
+			</list>
+		</property>
 	</bean>
 	<bean class="com.clc.FarmTools" id="tools">
 		<property name="fTool" value="Jembe"></property>

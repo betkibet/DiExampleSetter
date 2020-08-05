@@ -1,13 +1,16 @@
 package com.clc;
 
-public class Animal {
-	private String aName;
+import java.util.ArrayList;
 
-	public String getaName() {
+public class Animal {
+//	private String aName;
+	private ArrayList<String> aName;
+
+	public ArrayList<String> getaName() {
 		return aName;
 	}
 
-	public void setaName(String aName) {
+	public void setaName(ArrayList<String> aName) {
 		this.aName = aName;
 	}
 	
