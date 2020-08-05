@@ -2,7 +2,7 @@
 			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
 <beans>
 	<bean class="com.clc.Farmer" id="farmer" scope="singleton">
-		<property name="fName" value="Namanga"></property>
+		<property name="fName" value="Namer"></property>
 		<property name="aAge" value="21"></property>
 		<property name="animal" ref="anim"></property>
 		<property name="farmTools" ref="tools"></property>
