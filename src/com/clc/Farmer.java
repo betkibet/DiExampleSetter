@@ -1,17 +1,25 @@
 package com.clc;
 
+import java.util.Map;
+
 public class Farmer {
 	private String fName;
 	private String aAge;
 	//Get Animal name from Class Animal
 //	private Animal animal;
 	private Animal[] animal;
-	private FarmTools farmTools;
+//	private FarmTools farmTools;
+	private FarmTools[] farmTools;
+	
 	
 	public void printAnimal() {
 //		System.out.println("Hi " + fName + " your " + animal.getaName() + " is " + aAge + " years. You use " + farmTools.getfTool() + " for " + farmTools.getuTool() );
 		for (Animal animal2 : animal) {
 			System.out.println(animal2.getaName());
+		}
+		
+		for (FarmTools f : farmTools) {
+			System.out.println(f.gettTool());
 		}
 	}
 
@@ -41,13 +49,19 @@ public class Farmer {
 		this.animal = animal;
 	}
 
-	public FarmTools getFarmTools() {
+	public FarmTools[] getFarmTools() {
 		return farmTools;
 	}
 
-	public void setFarmTools(FarmTools farmTools) {
+	public void setFarmTools(FarmTools[] farmTools) {
 		this.farmTools = farmTools;
 	}
+	
+	/*
+	 * public FarmTools getFarmTools() { return farmTools; }
+	 * 
+	 * public void setFarmTools(FarmTools farmTools) { this.farmTools = farmTools; }
+	 */
 
 	/*
 	 * public String getaType() { return aType; }

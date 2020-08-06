@@ -21,5 +21,11 @@
 	<bean class="com.clc.FarmTools" id="tools">
 		<property name="fTool" value="Jembe"></property>
 		<property name="uTool" value="Digging Narrow alleys"></property>
+		<property name="tTool">
+			<map>
+				<entry key="Jembe" value="Digging valleys"></entry>
+				<entry key="Fork" value="Kulisha Ngombe"></entry>
+			</map>
+		</property>
 	</bean>
 </beans>
